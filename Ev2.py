@@ -9,13 +9,13 @@ Cantidad = 0
 Descripcion = ""
 Precio = 0
 resultado=0
-columnas = ("Descripcion", " Fecha", "Cantidad", "Precio", "resultado")
+columnas = ("Titulo", " Autor", "Genero", "Año de publicación", "Fecha de adquisición")
 ventas=[]
 registro = []
 Fecha= []
 
 def menu():
-    print("\n Bibleria ")
+    print("\n Biblioteca ")
     print("\n MENÚ ")
     print("1. AGREGAR VENTA")
     print("2. CONSULTAR UNA VENTA")
