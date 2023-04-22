@@ -15,7 +15,7 @@ registro = []
 Fecha= []
 
 def menu():
-    print("\n TIENDA DE COSMETICOS ")
+    print("\n Bibleria ")
     print("\n MENÚ ")
     print("1. AGREGAR VENTA")
     print("2. CONSULTAR UNA VENTA")
