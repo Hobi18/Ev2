@@ -97,7 +97,7 @@ while (True):
         else:
             while respuesta == 1:
                 registro = []
-                Descripcion = input ("\nIngresa la descripcion del articulo: ")
+                Descripcion = input ("\nIngresa la descripcion del Libro: ")
                 Fecha =input("\nIngresa la fecha (dd/mm/aaaa): ")
                 Fecha=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 Cantidad = int(input("\nIngresa la cantidad de articulos: "))
@@ -107,14 +107,14 @@ while (True):
                 registro.append(Cantidad)
                 registro.append(Precio)
                 ventas.append(registro)
-                respuesta = int(input("\n¿Deseas capturar otro articulo? \n (1.SI - 0.NO): "))
+                respuesta = int(input("\n¿Deseas capturar otro libro? \n (1.SI - 0.NO): "))
                
     elif op=="2":
         if ventas:
             Descripcion_buscar =(input("\nIngresa el articulo que deseas consultar: "))
             indice_obtenido=buscarArt(Descripcion_buscar)
             if indice_obtenido==-1:
-                    print("Dicho articulo no está registrado")
+                    print("Dicho artículo no está registrado")
             else:
                 print(f"\nSU ARTICULO ES: ")
                 print(f"\nDescripcion: {ventas[indice_obtenido][0]}")
