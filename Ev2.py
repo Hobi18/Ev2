@@ -17,9 +17,9 @@ Fecha= []
 def menu():
     print("\n Biblioteca ")
     print("\n MENÚ ")
-    print("1. AGREGAR VENTA")
-    print("2. CONSULTAR UNA VENTA")
-    print("3. REPORTE DE VENTA (SEGUN FECHA)")
+    print("1. REGISTRAR")
+    print("2. CONSULTAS")
+    print("3. REPORTES (SEGUN FECHA)")
     print("4. SALIR.")
     
 def buscarFecha(Fecha_buscar):
