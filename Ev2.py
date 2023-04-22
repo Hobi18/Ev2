@@ -83,7 +83,7 @@ while (True):
         if ventas:
             while respuesta == 1:
                 registro = []
-                Descripcion = input ("\nIngresa la descripcion del articulo: ")
+                Descripcion = input ("\nIngresa la descripcion del Libro: ")
                 Fecha =input("\nIngresa la fecha (dd/mm/aaaa): ")
                 Fecha=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 Cantidad = int(input("\nIngresa la cantidad de articulos: "))
