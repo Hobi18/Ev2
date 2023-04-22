@@ -73,7 +73,7 @@ def Lista_A_CSV():
             registrador.writerows()
         archivo.close()
 
-CSV_A_Lista(columnas = ("Descripcion", "Fecha", "Cantidad", "Precio"))
+CSV_A_Lista(columnas = ("Genero", "Año de publicación", "Cantidad", "Precio"))
 
 while (True):
     menu()
