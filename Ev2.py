@@ -5,14 +5,15 @@ import datetime
 
 
 respuesta = 1
-Cantidad = 0
-GENERO = ""
-AUTOR = 0
-resultado=0
-columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN")
-ventas=[]
+cantidad = 0
+genero = ""
+autor = ""
+resultado = 0
+titulo = ""
+columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN")
+isbn = []
 registro = []
-PUBLICACION= []
+año_publicacion= []
 
 def menu():
     print("\n BIBLIOTECA ")
