@@ -148,7 +148,7 @@ while (True):
             FECHADEADQUISICIÓN_buscar=datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
             ind_obt=buscarFecha(FECHA DE ADQUISICIÓN_buscar)
             if ind_obt==-1:
-                    print("Dicho libro no está registrado")
+                    print("Dicho libro aún no está adquirido")
             else:
                 print(f"\ REPORTE DE VENTA")
                 print(f"\SU LIBRO ES: ")
