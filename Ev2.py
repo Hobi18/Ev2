@@ -111,14 +111,14 @@ while (True):
                
     elif op=="2":
         if ventas:
-            Descripcion_buscar =(input("\nIngresa el articulo que deseas consultar: "))
+            Descripcion_buscar =(input("\nIngresa el LIBRO que deseas consultar: "))
             indice_obtenido=buscarArt(Descripcion_buscar)
             if indice_obtenido==-1:
                     print("Dicho artículo no está registrado")
             else:
-                print(f"\nSU ARTICULO ES: ")
-                print(f"\nDescripcion: {ventas[indice_obtenido][0]}")
-                print(f"\nFecha: {ventas[indice_obtenido][1]}")
+                print(f"\nSU LIBRO ES: ")
+                print(f"\nGENERO: {ventas[indice_obtenido][0]}")
+                print(f"\nAÑO PUBLICADO: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
                 print(f"\nPrecio: {ventas[indice_obtenido][3]}")
                 print(f"\nSu total a pagar es: ")
@@ -134,9 +134,9 @@ while (True):
                     print("Dicho articulo no está registrado")
             else:
                 print(f"\ REPORTE DE VENTA")
-                print(f"\SU ARTICULO ES: ")
-                print(f"\nDescripcion: {ventas[indice_obtenido][0]}")
-                print(f"\nFecha: {ventas[indice_obtenido][1]}")
+                print(f"\SU LIBRO ES: ")
+                print(f"\nGENERO: {ventas[indice_obtenido][0]}")
+                print(f"\nAÑO PUBLICADO: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
                 print(f"\nPrecio: {ventas[indice_obtenido][3]}")
                 print(f"\nSu total a pagar es: ")
