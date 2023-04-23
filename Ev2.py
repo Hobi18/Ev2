@@ -7,7 +7,7 @@ import datetime
 respuesta = 1
 Cantidad = 0
 GENERO = ""
-Precio = 0
+AUTOR = 0
 resultado=0
 columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN")
 ventas=[]
@@ -89,10 +89,10 @@ while (True):
                 Fecha=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 Cantidad = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
                 Precio = int(input("\nIngresa el precio del libro: "))
-                registro.append(Descripcion)
-                registro.append(Fecha)
+                registro.append(GENERO)
+                registro.append(AÑO DE PUBLICACIÓN)
                 registro.append(Cantidad)
-                registro.append(Precio)
+                registro.append(AUTOR)
                 ventas.append(registro)
                 respuesta = int(input("\n¿Deseas capturar otro registro? \n (1.SI - 0.NO): ")) 
         else:
@@ -103,10 +103,10 @@ while (True):
                 Fecha=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 Cantidad = int(input("\nIngresa la cantidad de articulos: "))
                 Precio = int(input("\nIngresa el precio del articulo: "))
-                registro.append(Descripcion)
-                registro.append(Fecha)
+                registro.append(GENERO)
+                registro.append(AÑO DE PUBLICACIÓN)
                 registro.append(Cantidad)
-                registro.append(Precio)
+                registro.append(AUTOR)
                 ventas.append(registro)
                 respuesta = int(input("\n¿Deseas capturar otro libro? \n (1.SI - 0.NO): "))
                
@@ -119,9 +119,9 @@ while (True):
             else:
                 print(f"\nSU LIBRO ES: ")
                 print(f"\nGENERO: {ventas[indice_obtenido][0]}")
-                print(f"\nAÑO PUBLICADO: {ventas[indice_obtenido][1]}")
+                print(f"\nAÑO DE PUBLICACIÓN: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
-                print(f"\nPrecio: {ventas[indice_obtenido][3]}")
+                print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
                 print(f"\nSu total a pagar es: ")
                 resultado=int(input(Cantidad*Precio))
             
@@ -137,9 +137,9 @@ while (True):
                 print(f"\ REPORTE DE VENTA")
                 print(f"\SU LIBRO ES: ")
                 print(f"\nGENERO: {ventas[indice_obtenido][0]}")
-                print(f"\nAÑO PUBLICADO: {ventas[indice_obtenido][1]}")
+                print(f"\nAÑO DE PUBLICACIÓN: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
-                print(f"\nPrecio: {ventas[indice_obtenido][3]}")
+                print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
                 print(f"\nSu total a pagar es: ")
                 resultado=int(input(Cantidad*Precio))
     elif op=="4":
