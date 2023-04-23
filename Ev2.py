@@ -134,10 +134,10 @@ while (True):
                     print("Dicho artículo no está registrado")
             else:
                 print(f"\nSU LIBRO ES: ")
-                print(f"\nGENERO: {ventas[indice_obtenido][0]}")
-                print(f"\nAÑO DE PUBLICACIÓN: {ventas[indice_obtenido][1]}")
-                print(f"\nCantidad: {ventas[indice_obtenido][2]}")
-                print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
+                print(f"\nGENERO: {ISBN[indice_obtenido][0]}")
+                print(f"\nAÑO DE PUBLICACIÓN: {ISBN[indice_obtenido][1]}")
+                print(f"\nCantidad: {ISBN[indice_obtenido][2]}")
+                print(f"\nAUTOR: {ISBN[indice_obtenido][3]}")
                 print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
                 resultado=int(input(CANTIDAD))
             
