@@ -36,7 +36,7 @@ def buscarAÑODEADQUISICIÓN (AÑODEADQUISICIÓN_buscar):
 def buscarArt(Art_buscar):
     contador=-1
     indice_retorno=-1
-    for elemento in ventas:
+    for elemento in ISBN:
         contador+=1
         if (elemento[:][0] == Art_buscar):
             indice_retorno=contador
