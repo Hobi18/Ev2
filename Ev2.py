@@ -49,7 +49,7 @@ def CSV_A_Lista(columnas = list()):
         with open("datos.csv", "r") as archivo: 
             lector = csv.reader(archivo, delimiter=',')
             registros = 1
-            for GENERO, Cantidad, Precio in lector:
+            for GENERO, Cantidad, AUTOR in lector:
                 if registros == 0:
                     columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN")
 
