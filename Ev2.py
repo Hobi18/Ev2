@@ -98,13 +98,13 @@ while (True):
         else:
             while respuesta == 1:
                 registro = []
-                GENERO = input ("\nIngresa la GENERO del Libro: ")
+                GENERO = input ("\nIngresa el genero del Libro: ")
                 Fecha =input("\nIngresa la fecha (dd/mm/aaaa): ")
                 Fecha=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 Cantidad = int(input("\nIngresa la cantidad de articulos: "))
                 Precio = int(input("\nIngresa el precio del articulo: "))
-                registro.append(GENERO)
-                registro.append(AÑO DE PUBLICACIÓN)
+                registro.append(Descripcion)
+                registro.append(Fecha)
                 registro.append(Cantidad)
                 registro.append(Precio)
                 ventas.append(registro)
