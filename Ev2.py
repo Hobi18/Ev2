@@ -9,7 +9,7 @@ Cantidad = 0
 Descripcion = ""
 Precio = 0
 resultado=0
-columnas = ("Titulo", " Autor", "Genero", "Año de publicación", "Fecha de adquisición")
+columnas = ("TITULO, "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN")
 ventas=[]
 registro = []
 Fecha= []
@@ -49,9 +49,9 @@ def CSV_A_Lista(columnas = list()):
         with open("datos.csv", "r") as archivo: 
             lector = csv.reader(archivo, delimiter=',')
             registros = 1
-            for Descripcion, Cantidad, Precio in lector:
+            for GENERO, Cantidad, Precio in lector:
                 if registros == 0:
-                    columnas = (Descripcion, Fecha, Cantidad, Precio)
+                    columnas = (GENERO, AÑO DE PUBLICACIÓN, Cantidad, Precio)
                     registros = registros + 1
                 else:
                     Descripcion = (Descripcion)
