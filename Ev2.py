@@ -13,7 +13,7 @@ TITULO = ""
 columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN")
 ISBN = []
 registro = []
-AÑODEPUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+AÑO_DE_PUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 FECHADEADQUISICIÓN = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 
 def menu():
@@ -24,12 +24,12 @@ def menu():
     print("3. REPORTES (SEGUN EL AÑO)")
     print("4. SALIR.")
     
-def buscarAÑODEPUBLICACION (AÑODEPUBLICACION_buscar):
+def buscarAÑO_DE_PUBLICACION (AÑO_DE_PUBLICACION_buscar):
     control=-1
     ind_retorno=-1
-    for elemento in AÑODEPUBLICACION:
+    for elemento in AÑO_DE_PUBLICACION:
         control=+1
-        if(elemento[:][0]==AÑODEPUBLICACION_buscar):
+        if(elemento[:][0]==AÑO_DE_PUBLICACION_buscar):
             ind_retorno=control
             break
     return ind_retorno
@@ -139,7 +139,7 @@ while (True):
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
                 print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
                 print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
-                resultado=int(input(Cantidad*Precio))
+                resultado=int(input(CANTIDAD))
             
         else:
                     print("No hay registros para mostrar")
@@ -157,7 +157,7 @@ while (True):
                 print(f"\nCantidad: {CANTIDAD[indice_obtenido][2]}")
                 print(f"\nAUTOR: {CANTIDAD[indice_obtenido][3]}")
                 print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
-                resultado=int(input(Cantidad*Precio))
+                resultado=int(input(CANTIDAD))
     elif op=="4":
         print("SALIENDO...gracias")
         break
