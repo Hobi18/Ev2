@@ -13,8 +13,8 @@ TITULO = ""
 columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN")
 ISBN = []
 registro = []
-AÑO_DE_PUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
-FECHADEADQUISICIÓN = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+AÑO_DE_PUBLICACION = datetime.datetime.strptime("AÑO_DE_PUBLICACION", "%d/%m/%Y").date()
+FECHADEADQUISICIÓN = datetime.datetime.strptime("FECHADEADQUISICION", "%d/%m/%Y").date()
 
 def menu():
     print("\n BIBLIOTECA ")
