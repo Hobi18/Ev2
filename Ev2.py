@@ -57,7 +57,7 @@ def CSV_A_Lista(columnas = list()):
 
                     registros = registros + 1
                 else:
-                    Genero = (Genero)
+                    Genero = (GENERO)
                     ventas.append (["TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN"])
         archivo.close()
     else:
@@ -83,7 +83,7 @@ while (True):
     op = input("¿Qué opción deseas?: ")
     respuesta==1
     if op=="1":
-        if ventas:
+        if ISBN:
             while respuesta == 1:
                 registro = []
                 TITULO = input("\nIngresa el titulo del libro: ")
@@ -127,7 +127,7 @@ while (True):
                 respuesta = int(input("\n¿Deseas capturar otro registro? \n (1.SI - 0.NO): ")) 
                
     elif op=="2":
-        if ventas:
+        if ISBN:
             GENERO_buscar =(input("\nIngresa el LIBRO que deseas consultar: "))
             indice_obtenido=buscarArt(GENERO_buscar)
             if indice_obtenido==-1:
@@ -144,9 +144,9 @@ while (True):
         else:
                     print("No hay registros para mostrar")
     elif op=="3":
-        if Fecha:
-            Fecha_buscar=datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
-            ind_obt=buscarFecha(Fecha_buscar)
+        if FECHA DE ADQUISICIÓN:
+            FECHA DE ADQUISICIÓN_buscar=datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
+            ind_obt=buscarFecha(FECHA DE ADQUISICIÓN_buscar)
             if ind_obt==-1:
                     print("Dicho libro no está registrado")
             else:
