@@ -14,7 +14,7 @@ columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUIS
 ISBN = []
 registro = []
 AÑODEPUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
-FECHA_DE_ADQUISICIÓN = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+FECHADEADQUISICIÓN = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 
 def menu():
     print("\n BIBLIOTECA ")
@@ -91,8 +91,8 @@ while (True):
                 GENERO = input("\nIngresa el GENERO del Libro: ")
                 AÑO_DE_PUBLICACION = input("\nIngresa el año de su publicacion: ")
                 AÑO_DE_PUBLICACION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
-                FECHA_DE_ADQUISICION = input("\nIngresa la fecha de adquisicion (dd/mm/aaaa): ")
-                FECHA_DE_ADQUISICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+                FECHADEADQUISICION = input("\nIngresa la fecha de adquisicion (dd/mm/aaaa): ")
+                FECHADEADQUISICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 CANTIDAD = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
                 ISBN = int(input("\nIngresa el ISBN del libro: "))
                 registro.append(TITULO)
@@ -112,8 +112,8 @@ while (True):
                 GENERO = input("\nIngresa el GENERO del Libro: ")
                 AÑO_DE_PUBLICACION = input("\nIngresa el año de su publicacion: ")
                 AÑO_DE_PUBLICACION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
-                FECHA_DE_ADQUISICION = input("\nIngresa la fecha de adquisicion (dd/mm/aaaa): ")
-                FECHA_DE_ADQUISICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+                FECHADEADQUISICION = input("\nIngresa la fecha de adquisicion (dd/mm/aaaa): ")
+                FECHADEADQUISICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
                 CANTIDAD = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
                 ISBN = int(input("\nIngresa el ISBN del libro: "))
                 registro.append(TITULO)
@@ -144,16 +144,16 @@ while (True):
         else:
                     print("No hay registros para mostrar")
     elif op=="3":
-        if FECHA_DE_ADQUISICIÓN:
-            FECHA_DE_ADQUISICIÓN_buscar=datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
-            ind_obt=buscarFecha(FECHA DE ADQUISICIÓN_buscar)
+        if FECHADEADQUISICION:
+            FECHADEADQUISICION_buscar = datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
+            ind_obt = buscarFECHADEADQUISICION (FECHADEADQUISICION_buscar)
             if ind_obt==-1:
                     print("Dicho libro aún no está adquirido")
             else:
                 print(f"\ REPORTE DE VENTA")
                 print(f"\SU LIBRO ES: ")
                 print(f"\nGENERO: {ventas[indice_obtenido][0]}")
-                print(f"\nAÑO DE PUBLICACIÓN: {ventas[indice_obtenido][1]}")
+                print(f"\nAÑO DE PUBLICACION: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
                 print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
                 print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
