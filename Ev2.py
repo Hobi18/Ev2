@@ -14,6 +14,7 @@ columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUIS
 ISBN = []
 registro = []
 AÑO_DE_PUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+FECHA_DE_ADQUISICIÓN = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 
 def menu():
     print("\n BIBLIOTECA ")
@@ -85,15 +86,22 @@ while (True):
         if ventas:
             while respuesta == 1:
                 registro = []
-                GENERO = input ("\nIngresa la GENERO del Libro: ")
-                Fecha =input("\nIngresa la fecha (dd/mm/aaaa): ")
-                Fecha=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
-                Cantidad = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
-                Precio = int(input("\nIngresa el precio del libro: "))
+                TITULO = input("\nIngresa el titulo del libro: ")
+                AUTOR = input("\nIngresa el autor del libro: ")
+                GENERO = input("\nIngresa el GENERO del Libro: ")
+                AÑO_DE_PUBLICACION = input("\nIngresa el año de su publicacion: ")
+                AÑO_DE_PUBLICACION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+                FECHA_DE_ADQUISICION = input("\nIngresa la fecha de adquisicion (dd/mm/aaaa): ")
+                FECHA_DE_ADQUISICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+                CANTIDAD = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
+                ISBN = int(input("\nIngresa el ISBN del libro: "))
+                registro.append(TITULO)
+                registro.append(AUTOR)
                 registro.append(GENERO)
                 registro.append(AÑO_DE_PUBLICACION)
-                registro.append(Cantidad)
-                registro.append(AUTOR)
+                registro.append(FECHA_DE_ADQUISICION)
+                registro.append(CANTIDAD)
+                registro.append(ISBN)
                 ventas.append(registro)
                 respuesta = int(input("\n¿Deseas capturar otro registro? \n (1.SI - 0.NO): ")) 
         else:
