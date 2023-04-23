@@ -144,8 +144,8 @@ while (True):
         else:
                     print("No hay registros para mostrar")
     elif op=="3":
-        if FECHADEADQUISICIÓN:
-            FECHADEADQUISICIÓN_buscar=datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
+        if FECHA_DE_ADQUISICIÓN:
+            FECHA_DE_ADQUISICIÓN_buscar=datetime.datetime.strptime(input("Ingresa la fecha en la que se realizo la venta del articulo: ")).date()
             ind_obt=buscarFecha(FECHA DE ADQUISICIÓN_buscar)
             if ind_obt==-1:
                     print("Dicho libro aún no está adquirido")
