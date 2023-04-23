@@ -74,7 +74,7 @@ def Lista_A_CSV():
             registrador.writerows()
         archivo.close()
 
-CSV_A_Lista(columnas = ("Genero", "Año de publicación", "Cantidad", "Precio"))
+CSV_A_Lista(columnas = ("GENERO", "AÑO DE PUBLICACIÓN", "CANTIDAD", "PRECIO"))
 
 while (True):
     menu()
@@ -113,7 +113,7 @@ while (True):
     elif op=="2":
         if ventas:
             Descripcion_buscar =(input("\nIngresa el LIBRO que deseas consultar: "))
-            indice_obtenido=buscarArt(Descripcion_buscar)
+            indice_obtenido=buscarArt(GENERO_buscar)
             if indice_obtenido==-1:
                     print("Dicho artículo no está registrado")
             else:
