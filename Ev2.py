@@ -12,7 +12,7 @@ resultado = 0
 TITULO = ""
 columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN")
 ISBN = []
-registro = []
+registros = []
 AÑO_DE_PUBLICION = 
 
 def menu():
