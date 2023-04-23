@@ -6,13 +6,13 @@ import datetime
 
 respuesta = 1
 Cantidad = 0
-Descripcion = ""
+GENERO = ""
 Precio = 0
 resultado=0
 columnas = ("TITULO, "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN")
 ventas=[]
 registro = []
-Fecha= []
+PUBLICACION= []
 
 def menu():
     print("\n BIBLIOTECA ")
