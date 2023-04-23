@@ -23,12 +23,12 @@ def menu():
     print("3. REPORTES (SEGUN EL AÑO)")
     print("4. SALIR.")
     
-def buscarFecha(Fecha_buscar):
+def buscarFECHA DE ADQUISICIÓN (AÑO DE ADQUISICIÓN_buscar):
     control=-1
     ind_retorno=-1
-    for elemento in Fecha:
+    for elemento in AÑO:
         control=+1
-        if(elemento[:][0]==Fecha_buscar):
+        if(elemento[:][0]==AÑO DE ADQUISICIÓN_buscar):
             ind_retorno=control
             break
     return ind_retorno
