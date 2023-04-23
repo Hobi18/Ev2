@@ -152,10 +152,10 @@ while (True):
             else:
                 print(f"\ REPORTE DE VENTA")
                 print(f"\SU LIBRO ES: ")
-                print(f"\nGENERO: {ventas[indice_obtenido][0]}")
-                print(f"\nAÑO DE PUBLICACION: {ventas[indice_obtenido][1]}")
-                print(f"\nCantidad: {ventas[indice_obtenido][2]}")
-                print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
+                print(f"\nGENERO: {CANTIDAD[indice_obtenido][0]}")
+                print(f"\nAÑO DE PUBLICACION: {CANTIDAD[indice_obtenido][1]}")
+                print(f"\nCantidad: {CANTIDAD[indice_obtenido][2]}")
+                print(f"\nAUTOR: {CANTIDAD[indice_obtenido][3]}")
                 print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
                 resultado=int(input(Cantidad*Precio))
     elif op=="4":
