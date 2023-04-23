@@ -19,7 +19,7 @@ def menu():
     print("\n MENÚ ")
     print("1. REGISTRAR")
     print("2. CONSULTAS")
-    print("3. REPORTES (SEGUN FECHA)")
+    print("3. REPORTES (SEGUN EL AÑO)")
     print("4. SALIR.")
     
 def buscarFecha(Fecha_buscar):
