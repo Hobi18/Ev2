@@ -13,7 +13,7 @@ TITULO = ""
 columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN")
 ISBN = []
 registro = []
-AÑO_DE_PUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+AÑODEPUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 FECHA_DE_ADQUISICIÓN = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 
 def menu():
@@ -24,12 +24,12 @@ def menu():
     print("3. REPORTES (SEGUN EL AÑO)")
     print("4. SALIR.")
     
-def buscarAÑODEADQUISICIÓN (AÑODEADQUISICIÓN_buscar):
+def buscarAÑODEPUBLICACION (AÑODEPUBLICACION_buscar):
     control=-1
     ind_retorno=-1
-    for elemento in AÑO:
+    for elemento in AÑODEPUBLICACION:
         control=+1
-        if(elemento[:][0]==AÑODEADQUISICIÓN_buscar):
+        if(elemento[:][0]==AÑODEPUBLICACION_buscar):
             ind_retorno=control
             break
     return ind_retorno
