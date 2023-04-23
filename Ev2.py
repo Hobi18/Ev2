@@ -122,7 +122,7 @@ while (True):
                 print(f"\nAÑO DE PUBLICACIÓN: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
                 print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
-                print(f"\nSu total a pagar es: ")
+                print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
                 resultado=int(input(Cantidad*Precio))
             
         else:
@@ -140,7 +140,7 @@ while (True):
                 print(f"\nAÑO DE PUBLICACIÓN: {ventas[indice_obtenido][1]}")
                 print(f"\nCantidad: {ventas[indice_obtenido][2]}")
                 print(f"\nAUTOR: {ventas[indice_obtenido][3]}")
-                print(f"\nSu total a pagar es: ")
+                print(f"\nSu TOTAL DE LIBROS ALQUILADOS es: ")
                 resultado=int(input(Cantidad*Precio))
     elif op=="4":
         print("SALIENDO...gracias")
