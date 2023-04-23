@@ -9,7 +9,7 @@ Cantidad = 0
 GENERO = ""
 AUTOR = 0
 resultado=0
-columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN")
+columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN")
 ventas=[]
 registro = []
 PUBLICACION= []
@@ -51,12 +51,12 @@ def CSV_A_Lista(columnas = list()):
             registros = 1
             for GENERO, Cantidad, AUTOR in lector:
                 if registros == 0:
-                    columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN")
+                    columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN")
 
                     registros = registros + 1
                 else:
                     Genero = (Genero)
-                    ventas.append (["TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACIÓN", "FECHA DE ADQUISICIÓN"])
+                    ventas.append (["TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN"])
         archivo.close()
     else:
         with open("datos.csv", "w", newline="") as archivo:
@@ -74,7 +74,7 @@ def Lista_A_CSV():
             registrador.writerows()
         archivo.close()
 
-CSV_A_Lista(columnas = ("GENERO", "AÑO DE PUBLICACIÓN", "CANTIDAD", "PRECIO"))
+CSV_A_Lista(columnas = ("GENERO", "AÑO DE PUBLICACION", "CANTIDAD", "PRECIO"))
 
 while (True):
     menu()
@@ -90,7 +90,7 @@ while (True):
                 Cantidad = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
                 Precio = int(input("\nIngresa el precio del libro: "))
                 registro.append(GENERO)
-                registro.append(AÑO DE PUBLICACIÓN)
+                registro.append(AÑO DE PUBLICACION)
                 registro.append(Cantidad)
                 registro.append(AUTOR)
                 ventas.append(registro)
@@ -104,7 +104,7 @@ while (True):
                 Cantidad = int(input("\nIngresa la cantidad de articulos: "))
                 Precio = int(input("\nIngresa el precio del articulo: "))
                 registro.append(GENERO)
-                registro.append(AÑO DE PUBLICACIÓN)
+                registro.append(AÑO DE PUBLICACION)
                 registro.append(Cantidad)
                 registro.append(AUTOR)
                 ventas.append(registro)
