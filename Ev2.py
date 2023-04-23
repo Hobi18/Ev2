@@ -12,7 +12,7 @@ resultado = 0
 TITULO = ""
 columnas = ("TITULO", "AUTOR", "GENERO", "AÑO DE PUBLICACION", "FECHA DE ADQUISICIÓN", "CANTIDAD", "ISBN")
 ISBN = []
-registros = []
+registro = []
 AÑO_DE_PUBLICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
 
 def menu():
