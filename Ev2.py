@@ -107,19 +107,24 @@ while (True):
         else:
             while respuesta == 1:
                 registro = []
-                GENERO = input ("\nIngresa el GENERO del Libro: ")
-                AÑO_DE_PUBLICACION =input("\nIngresa la fecha (dd/mm/aaaa): ")
-                AÑO_DE_PUBLICACION=datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
-                CANTIDAD = int(input("\nIngresa la cantidad de articulos: "))
-                ISBN = int(input("\nIngresa el ISBN del articulo: "))
+                TITULO = input("\nIngresa el titulo del libro: ")
+                AUTOR = input("\nIngresa el autor del libro: ")
+                GENERO = input("\nIngresa el GENERO del Libro: ")
+                AÑO_DE_PUBLICACION = input("\nIngresa el año de su publicacion: ")
+                AÑO_DE_PUBLICACION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+                FECHA_DE_ADQUISICION = input("\nIngresa la fecha de adquisicion (dd/mm/aaaa): ")
+                FECHA_DE_ADQUISICION = datetime.datetime.strptime(Fecha, "%d/%m/%Y").date()
+                CANTIDAD = int(input("\nIngresa la cantidad de libros que deseas adquirir: "))
+                ISBN = int(input("\nIngresa el ISBN del libro: "))
                 registro.append(TITULO)
+                registro.append(AUTOR)
                 registro.append(GENERO)
                 registro.append(AÑO_DE_PUBLICACION)
+                registro.append(FECHA_DE_ADQUISICION)
                 registro.append(CANTIDAD)
-                registro.append(AUTOR)
                 registro.append(ISBN)
                 ventas.append(registro)
-                respuesta = int(input("\n¿Deseas capturar otro libro? \n (1.SI - 0.NO): "))
+                respuesta = int(input("\n¿Deseas capturar otro registro? \n (1.SI - 0.NO): ")) 
                
     elif op=="2":
         if ventas:
