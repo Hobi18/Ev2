@@ -52,10 +52,11 @@ def CSV_A_Lista(columnas = list()):
             for GENERO, Cantidad, Precio in lector:
                 if registros == 0:
                     columnas = (GENERO, AÑO DE PUBLICACIÓN, Cantidad, Precio)
+
                     registros = registros + 1
                 else:
-                    Descripcion = (Descripcion)
-                    ventas.append([Descripcion, Fecha, Cantidad, Precio])
+                    Genero = (Genero)
+                    ventas.append([Titulo,  Autor, Genero, Año de publicación, Fecha de adquisición])
         archivo.close()
     else:
         with open("datos.csv", "w", newline="") as archivo:
